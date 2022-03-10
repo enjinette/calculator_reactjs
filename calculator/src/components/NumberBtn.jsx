@@ -1,11 +1,19 @@
 import React, {useContext} from "react";
 import {MainContext} from '../pages/main'
 
-const NumberBtn = () => {
-    const {number_one} = useContext(MainContext);
-
+/*
+Function name: NumberBtn
+Description: Displays calculator's buttons
+*/
+const NumberBtn = (props) => {
+    const context_values = useContext(MainContext);
     return (
-        <p>THIS IS NUMBER BTN {number_one}</p>
+        <div
+            className={`${props.className}`}
+            onClick={context_values.operations[props.onClick]}
+            >
+            {props.keyValue}
+        </div>
     )
 }
 

@@ -34,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "number-format": "^0.1.2",
+    "react-number-format": "^4.9.1"
   }
 }
